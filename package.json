@@ -1,0 +1,18 @@
+{
+  "name": "co-paint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run serve --prefix %cd%/projects/server",
+    "client": "npm run serve --prefix %cd%/projects/client",
+    "start": "concurrently \"npm run client\" \"npm run server\"",
+    "preinstall": "pnpm i -C %cd%/projects/client & pnpm i -C %cd%/projects/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
