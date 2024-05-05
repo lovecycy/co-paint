@@ -1,11 +1,12 @@
 import './App.scss'
+import Toolbar from './components/toolbar'
 
 function App() {
 
   return (
     <div className='app'>
       <header className='header'>
-        todo
+        <Toolbar />
       </header>
       <aside>
         todo
